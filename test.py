@@ -79,15 +79,15 @@
 #     print("Не брать зонт")
 
 #  Задание 13.4.8
-try:
-   num = int(input("Введите любое целое число"))
-
-except:
-       print("Вы ввели неправильное число")
-else:
-   print(f"Вы ввели {num} ")
-finally:
-   print('Выход из программы')
+# try:
+#    num = int(input("Введите любое целое число"))
+#
+# except:
+#        print("Вы ввели неправильное число")
+# else:
+#    print(f"Вы ввели {num} ")
+# finally:
+#    print('Выход из программы')
 
 # try:
 #     age = int(input("How old are you?"))
@@ -97,4 +97,90 @@ finally:
 #     print(error)
 #     print("Неправильный возраст")
 # else:
-#     print(f"You are {age} years old!") # Возраст выводится только в случае, если пользователь ввёл правильный возраст.
+#     print(f"You are {age} years old!")
+
+# A = int(input("Введите любое целое число"))
+# B = int(input("Введите любое целое число"))
+# def are_both_odd(A, B):
+# if A % 2!=0 or B % 2!=0:
+#    print("Числа А и B нечетные")
+# else:
+#    print('Числа А и B четные')
+# Что то не выводит результат(((
+
+
+# if 6 <= 7 < 12:
+#     print("Утро!!!")
+# a = int(input("Введите число"))
+# if a == 10:
+#     print('a равно 10')
+# elif a < 10:
+#     print('a меньше 10')
+# else:
+#     print('a больше 10')
+
+spees = 20
+def get_wind_class(speed):
+    if 0 < spees < 5:
+        return"weak [1]"
+    elif 4 < spees <= 10:
+        return"moderate [2]"
+    elif 10 < spees <= 18:
+        return "strong [3]"
+    elif 18 < spees:
+        return "hurricane [4]"
+print(get_wind_class(3))
+# Не работает, выдает при любой цифре только первую
+# переменную speed на x все пошло. Почему? а поменял на
+# spees то же работает. Может зарезервированное
+
+# user_database = {
+#     'user': 'password',
+#     'iseedeadpeople': 'greedisgood',
+#     'hesoyam': 'tgm'
+# }
+# def check_user(username, password):
+#     if username in user_database:
+#         if password == user_database[username]:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+#
+# a = 42
+# b = 41
+# result = a if a > b else b
+# print(result)
+#
+# x = input("Ввод числа")
+# print("Результат " + str(x))
+
+# x = int(x)
+# if x == 0:
+#     print('if')
+# elif x > 0:
+#     print('elif')
+# else:
+#     print('else')
+#
+# if x== 0:
+#     x += 1
+#     print(x)
+# else:
+#     x -= 1
+#     print(x)
+
+
+# x = input("Ввод числа")
+#
+# if x == 0:
+#     x = 1
+#     print('x = zerro')
+# elif type(x) == type(5) or type(x) == type(5.5):
+#     print('OK')
+# else:
+#     print('No numer')
+#     x = 1
+#
+# print(100/x)
